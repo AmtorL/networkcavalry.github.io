@@ -1,3 +1,14 @@
-<html><head></head><body>
-<h1>hhhhh</h1>
-</body></html>
+<html>
+  <head>
+  </head>
+  <body>
+<span id=showImport></span>
+<IE:Download ID="oDownload" STYLE="behavior:url(#default#download)" />
+<script>
+function onDownloadDone(downDate){
+showImport.innerHTML=downDate
+}
+oDownload.startDownload('sh.htm',onDownloadDone)
+</script>
+</body>
+</html>
